@@ -2,8 +2,12 @@
 body {
     margin: 0;
     line-height: normal;
+    
 }
-
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+    width: 0;
+  }
 
 :root {
     
