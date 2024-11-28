@@ -1,0 +1,180 @@
+.icon {
+    position: absolute;
+    top: -56px;
+    left: -75px;
+    width: 722.5px;
+    height: 711.9px;
+    object-fit: contain;
+}
+.div1 {
+    position: absolute;
+    top: 321.53px;
+    left: 69px;
+    filter: blur(200px);
+    border-radius: 50%;
+    background: linear-gradient(180deg, #5500ff, #001aff);
+    width: 760.8px;
+    height: 380.2px;
+    transform:  rotate(-2.4deg);
+    transform-origin: 0 0;
+    opacity: 0.3;
+}
+.div2 {
+    position: absolute;
+    top: 233.53px;
+    left: 875px;
+    filter: blur(200px);
+    border-radius: 50%;
+    background: linear-gradient(180deg, #5500ff, #001aff);
+    width: 760.8px;
+    height: 380.2px;
+    transform:  rotate(-2.4deg);
+    transform-origin: 0 0;
+    opacity: 0.3;
+}
+.image-galaktic-conflict {
+    position: absolute;
+    top: 482px;
+    left: 120px;
+    border-radius: 85px;
+    width: 400.4px;
+    height: 493px;
+    object-fit: cover;
+}
+.galactic-conflict {
+    position: absolute;
+    top: 934px;
+    left: 124px;
+    letter-spacing: 0.03em;
+    line-height: 47px;
+    text-align: center;
+    display: inline-block;
+    width: 396px;
+}
+.image-half-lfe {
+    position: absolute;
+    top: 482px;
+    left: 640.38px;
+    border-radius: var(--br-59xl);
+    width: 400px;
+    height: 493px;
+    object-fit: cover;
+}
+.half-life {
+    position: absolute;
+    top: 934px;
+    left: 777px;
+    line-height: 47px;
+    text-align: center;
+    display: inline-block;
+    width: 175px;
+}
+.image-project-anomaly {
+    position: absolute;
+    top: 482px;
+    left: 1160.38px;
+    border-radius: var(--br-59xl);
+    width: 400px;
+    height: 493px;
+    object-fit: cover;
+}
+.project-anomaly {
+    position: absolute;
+    top: 934px;
+    left: 1192px;
+    line-height: 47px;
+    text-align: center;
+    display: inline-block;
+    width: 330px;
+}
+.gateway {
+    position: absolute;
+    top: 300px;
+    left: 459px;
+    font-size: var(--font-size-77xl);
+    line-height: 124.91%;
+    background: linear-gradient(90.69deg, #000, #fff 62.28%, #1a1a1a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    width: 640px;
+    height: 103px;
+}
+.interstellar {
+    position: absolute;
+    top: 197px;
+    left: 593px;
+    font-size: var(--font-size-77xl);
+    line-height: 124.91%;
+    background: linear-gradient(89.68deg, #000, #fff 50%, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    width: 966px;
+    height: 103px;
+}
+.div3 {
+    position: absolute;
+    top: 50px;
+    left: 1153px;
+    font-size: var(--font-size-base);
+    font-weight: 300;
+    font-family: var(--font-montserrat);
+    display: inline-block;
+    width: 70px;
+    height: 21px;
+}
+.div4 {
+    position: absolute;
+    top: 50px;
+    left: 632px;
+    font-size: var(--font-size-base);
+    font-weight: 300;
+    font-family: var(--font-montserrat);
+    display: inline-block;
+    width: 94px;
+    height: 21px;
+}
+.icon1 {
+    position: absolute;
+    height: 100%;
+    width: 27.67%;
+    top: 0%;
+    right: 72.33%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.ingat {
+    position: absolute;
+    top: 5.51px;
+    left: 52px;
+    letter-spacing: 0.09em;
+    line-height: 124.91%;
+    text-transform: uppercase;
+}
+.logo {
+    position: absolute;
+    height: 3.89%;
+    width: 9.2%;
+    top: 3.4%;
+    right: 45.37%;
+    bottom: 92.7%;
+    left: 45.43%;
+    font-size: 24px;
+}
+.div {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    height: 1117px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-29xl);
+    color: var(--color-white);
+    font-family: var(--font-krona-one);
+}
+

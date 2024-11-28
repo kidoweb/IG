@@ -1,0 +1,25 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+
+:root {
+    
+    /* fonts */
+    --font-krona-one: 'Krona One';
+    --font-montserrat: Montserrat;
+    
+    /* font sizes */
+    --font-size-base: 16px;
+    --font-size-77xl: 96px;
+    --font-size-29xl: 48px;
+    
+    /* Colors */
+    --color-white: #fff;
+    
+    /* Border radiuses */
+    --br-59xl: 78px;
+    
+}
