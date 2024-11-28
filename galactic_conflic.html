@@ -7,7 +7,24 @@
     <link rel="stylesheet" href="galactic_conflic.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" />
 </head>
+<style>
+    .image-1-1, .image-1-2 {
+        position: absolute;
+        top: 3px;
+        left: 0px;
+        width: 1029px;
+        height: 1130px;
+        object-fit: cover;
+        opacity: 0; /* Start with opacity 0 */
+        animation: fadeIn 2s forwards; /* Apply the fade-in animation */
+    }
 
+    @keyframes fadeIn {
+        to {
+            opacity: 0.5; /* End with opacity 1 */
+        }
+    }
+</style>
 <body>
     <div class="galactic-conflict">
         <div class="div"></div>
@@ -15,7 +32,7 @@
         <a href="index.html" class="link">
             <div class="div1">Главная</div>
         </a>
-        <a href="inwork.html" class="link">
+        <a href="abaut.html" class="link">
             <div class="div2">О сервере</div>
         </a>
         <a href="inwork.html" class="link">

@@ -1,0 +1,230 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+
+:root {
+    
+    /* fonts */
+    --font-krona-one: 'Krona One';
+    --font-montserrat: Montserrat;
+    
+    /* font sizes */
+    --font-size-17xl: 36px;
+    --font-size-5xl: 24px;
+    
+    /* Colors */
+    --color-white: #fff;
+    
+}
+.div1 {
+    position: absolute;
+    top: 592.36px;
+    left: 1024.27px;
+    filter: blur(200px);
+    border-radius: 50%;
+    background: linear-gradient(180deg, #5500ff, #001aff);
+    width: 960.3px;
+    height: 458px;
+    transform:  rotate(8.2deg);
+    transform-origin: 0 0;
+    opacity: 0.3;
+}
+.div2 {
+    position: absolute;
+    top: 83px;
+    left: 54.48px;
+    filter: blur(200px);
+    border-radius: 50%;
+    background: linear-gradient(180deg, #5500ff, #001aff);
+    width: 760.8px;
+    height: 380.2px;
+    transform:  rotate(8.2deg);
+    transform-origin: 0 0;
+    opacity: 0.3;
+}
+.icon {
+    position: absolute;
+    top: 343px;
+    left: calc(50% - 17px);
+    width: 145px;
+    height: 144px;
+    object-fit: cover;
+}
+.div4 {
+    position: absolute;
+    top: 176px;
+    left: calc(50% - 126.5px);
+    font-weight: 600;
+    background: linear-gradient(90deg, #fff, #001aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    width: 252px;
+}
+.p {
+    margin: 0;
+}
+.div5 {
+    position: absolute;
+    top: 239px;
+    left: calc(50% - 160.5px);
+    font-size: var(--font-size-5xl);
+    font-weight: 300;
+    display: inline-block;
+    width: 321px;
+}
+.image-icon {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 100.5px);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.div3 {
+    position: absolute;
+    top: 609px;
+    left: calc(50% + 298px);
+    width: 321px;
+    height: 297px;
+}
+.div7 {
+    position: absolute;
+    top: 234px;
+    left: calc(50% - 175.5px);
+    font-weight: 300;
+    display: inline-block;
+    width: 351px;
+    height: 58px;
+}
+.div8 {
+    position: absolute;
+    top: 176px;
+    left: calc(50% - 72.5px);
+    font-size: var(--font-size-17xl);
+    font-weight: 600;
+    background: linear-gradient(90deg, #fff, #001aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    width: 157.5px;
+    height: 43.9px;
+}
+.image-icon1 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 94.5px);
+    width: 201.3px;
+    height: 200px;
+    object-fit: cover;
+}
+.div6 {
+    position: absolute;
+    top: 609px;
+    left: calc(50% - 120px);
+    width: 351px;
+    height: 292px;
+    font-size: var(--font-size-5xl);
+}
+.div10 {
+    position: absolute;
+    top: 206px;
+    left: calc(50% - 166px);
+    font-weight: 300;
+    display: inline-block;
+    width: 332px;
+    height: 86px;
+}
+.div11 {
+    position: absolute;
+    top: 135px;
+    left: calc(50% - 131px);
+    font-size: var(--font-size-17xl);
+    font-weight: 600;
+    background: linear-gradient(90deg, #fff, #001aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    width: 246.5px;
+}
+.image-icon2 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 109px);
+    width: 201.4px;
+    height: 200px;
+    object-fit: cover;
+}
+.div9 {
+    position: absolute;
+    top: 609px;
+    left: calc(50% - 535px);
+    width: 332px;
+    height: 292px;
+    font-size: var(--font-size-5xl);
+}
+.b {
+    position: absolute;
+    top: 493px;
+    left: 860px;
+    letter-spacing: 0.08em;
+    background: linear-gradient(90.3deg, #fff, #404040);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.div12 {
+    position: absolute;
+    top: 226px;
+    left: 401px;
+    font-size: var(--font-size-5xl);
+    font-weight: 300;
+    display: inline-block;
+    width: 1085px;
+}
+.b1 {
+    position: absolute;
+    top: 167px;
+    left: 575px;
+    line-height: 121.81%;
+    text-align: left;
+}
+.interstellar-gateaway {
+    position: absolute;
+    top: 113px;
+    left: 665px;
+    line-height: 124.91%;
+    font-family: var(--font-krona-one);
+    background: linear-gradient(90.66deg, #1500ff, #fff 50%, #0a0449);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: pre-wrap;
+    text-align: left;
+}
+.div {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    height: 1080px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-17xl);
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
