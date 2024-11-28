@@ -227,3 +227,134 @@ a {
 a:hover {
     color: #ffcc00;         /* Например, красный цвет при наведении */
 }
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+
+    /* Контейнер для всей страницы */
+    .div {
+        height: auto; /* Высота контейнера адаптируется к содержимому */
+        padding: 20px; /* Отступы внутри контейнера */
+    }
+
+    /* Адаптация для логотипа */
+    .logo {
+        width: 30%; /* Уменьшаем ширину логотипа */
+        height: auto;
+        top: 5%;
+        left: 35%;
+        font-size: 18px;
+    }
+
+    /* Адаптация для текста */
+    .gateway, .interstellar {
+        font-size: 40px; /* Уменьшаем размер текста */
+        width: 100%;
+        text-align: center;
+    }
+
+    .gateway {
+        top: 10%; /* Смещаем текст выше */
+    }
+
+    .interstellar {
+        top: 20%; /* Смещаем текст чуть ниже */
+    }
+
+    /* Изображения */
+    .image-galaktic-conflict, .image-half-lfe, .image-project-anomaly {
+        width: 100%;
+        height: auto;
+        top: 20px; /* Уменьшаем отступ сверху */
+        left: 0;
+        border-radius: 10px; /* Уменьшаем радиус округления */
+    }
+
+    /* Округлые фоны */
+    .div1, .div2 {
+        width: 100%;
+        height: auto;
+        filter: blur(150px); /* Уменьшаем размытость для мобильных устройств */
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+        transform: none;
+    }
+
+    /* Стили для текста с эффектом */
+    .galactic-conflict, .half-life, .project-anomaly {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .galactic-conflict {
+        top: auto;
+        bottom: 10px;
+    }
+
+    .half-life {
+        top: auto;
+        bottom: 10px;
+    }
+
+    .project-anomaly {
+        top: auto;
+        bottom: 10px;
+    }
+
+    /* Адаптация для значков */
+    .icon, .icon1 {
+        width: 100%;
+        height: auto;
+        position: static; /* Убираем абсолютное позиционирование */
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+
+    /* Уменьшаем размеры фонов */
+    .div3, .div4 {
+        font-size: 14px; /* Уменьшаем размер текста */
+        width: auto;
+        height: auto;
+    }
+
+    /* Плавные анимации для мобильных */
+    .galactic-conflict:hover, .half-life:hover, .project-anomaly:hover,
+    .image-half-lfe:hover, .image-project-anomaly:hover, .image-galaktic-conflict:hover {
+        transform: scale(1); /* Убираем анимацию увеличения на мобильных устройствах */
+    }
+
+    /* Ссылки */
+    a {
+        font-size: 16px;
+    }
+}
+
+/* Адаптация для еще меньших экранов (например, для телефонов) */
+@media (max-width: 480px) {
+    .logo {
+        width: 40%;
+        font-size: 16px;
+        top: 10%;
+        left: 30%;
+    }
+
+    .gateway, .interstellar {
+        font-size: 30px; /* Еще больше уменьшаем размер текста */
+    }
+
+    .image-galaktic-conflict, .image-half-lfe, .image-project-anomaly {
+        width: 100%;
+        height: 250px; /* Уменьшаем изображения */
+    }
+
+    .galactic-conflict, .half-life, .project-anomaly {
+        font-size: 14px; /* Уменьшаем размер текста */
+        line-height: 1.4;
+    }
+}
