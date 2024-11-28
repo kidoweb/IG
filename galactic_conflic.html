@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="galactic_conflic.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" />
+</head>
+
+<body>
+    <div class="galactic-conflict">
+        <div class="div"></div>
+        <div class="galactic-conflict1">GALACTIC CONFLICT</div>
+        <a href="index.html" class="link">
+            <div class="div1">Главная</div>
+        </a>
+        <a href="inwork.html" class="link">
+            <div class="div2">О сервере</div>
+        </a>
+        <a href="inwork.html" class="link">
+            <div class="div3">Помощь</div>
+        </a>
+        <a href="steam://connect/46.174.50.56:27015" class="link">
+            <div class="div4">
+                <div class="child"></div>
+                <div class="div5">Подключиться</div>
+            </div>
+        </a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3231427818" class="link">
+            <div class="div6">
+                <div class="child"></div>
+                <div class="div7">Скачать контент</div>
+            </div>
+        </a>
+        <div class="div8">Исследуйте вселенные, участвуйте в масштабных битвах и стройте альянсы с другими игроками.
+            Сражайтесь за контроль над галактикой!</div>
+        <div class="div9">СЕЙЧАС ОНЛАЙН:</div>
+        <div class="div10">15</div>
+        <div class="div11">ВСЕГО СКАЧАНО:</div>
+        <div class="div12">532</div>
+        <div class="image-1-1-parent">
+            <img class="image-1-1" alt="" src="galac.png">
+            <img class="image-1-1" alt="" src="galac1.png">
+        </div>
+    </div>
+</body>
+
+<script>
+    // Функция для обновления информации о количестве игроков онлайн
+    function updateOnlinePlayers() {
+        // Запрос к API
+        fetch('https://api.gamemonitoring.ru/servers/3231691')
+            .then((response) => response.json())  // Парсим ответ как JSON
+            .then((data) => {
+                // Проверка наличия данных и вывод значения numplayers
+                const numPlayers = data.response.numplayers;
+                if (numPlayers !== undefined) {
+                    // Обновление элемента на странице
+                    document.querySelector('.div10').textContent = numPlayers;
+                } else {
+                    console.error('Не удалось получить количество игроков');
+                }
+            })
+            .catch((error) => {
+                console.error('Ошибка при запросе данных:', error);
+            });
+    }
+
+    // Функция для анимации быстрого пересчёта скачиваний от 1 до 1000
+    function animateDownloads(targetNumber) {
+        let currentNumber = 0;
+        const intervalTime = 10;  // время между обновлениями (мс)
+        const maxNumber = targetNumber;  // конечное число
+
+        const interval = setInterval(() => {
+            currentNumber += Math.floor(Math.random() * 10) + 1;  // случайный прирост
+            if (currentNumber >= maxNumber) {
+                currentNumber = maxNumber;  // не превышаем целевое число
+                clearInterval(interval);  // останавливаем анимацию, когда достигли цели
+                document.querySelector('.div12').textContent = "1000+";  // Отображаем "1000+" в конце
+            } else {
+                document.querySelector('.div12').textContent = currentNumber;  // обновляем на странице
+            }
+        }, intervalTime);
+    }
+
+    // Вызов функции сразу после загрузки страницы для обновления информации
+    updateOnlinePlayers();
+    animateDownloads(1000);  // начинаем анимацию скачиваний до 1000
+
+    // Повторное обновление данных каждую минуту
+    setInterval(updateOnlinePlayers, 60000);
+</script>
+
+</html>
