@@ -178,3 +178,52 @@
     font-family: var(--font-krona-one);
 }
 
+/* Добавим анимацию для текста при наведении */
+.galactic-conflict:hover {
+    color: #ffcc00; /* Изменение цвета текста */
+    transform: scale(1.1); /* Увеличение текста */
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+.half-life:hover {
+    color: #ffcc00; /* Изменение цвета текста */
+    transform: scale(1.1); /* Увеличение текста */
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+.project-anomaly:hover {
+    color: #ffcc00; /* Изменение цвета текста */
+    transform: scale(1.1); /* Увеличение текста */
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+/* Анимация для изображений при наведении */
+.image-half-lfe:hover {
+    transform: scale(1.1); /* Увеличение изображения */
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+.image-project-anomaly:hover {
+    transform: scale(1.1); /* Увеличение изображения */
+    transition: all 0.3s ease; /* Плавный переход */
+}
+/* Анимация для изображения при наведении */
+.image-galaktic-conflict:hover {
+    transform: scale(1.1); /* Увеличение изображения */
+    transition: transform 0.3s ease; /* Плавный переход */
+}
+
+/* Анимация для фона */
+.div1:hover, .div2:hover {
+    filter: blur(100px); /* Уменьшаем размытость фона при наведении */
+    opacity: 0.6; /* Изменение прозрачности */
+    transition: all 0.3s ease; /* Плавный переход */
+}
+a {
+    text-decoration: none;  /* Убирает подчеркивание */
+    color: inherit;         /* Наследует цвет от родительского элемента */
+}
+
+a:hover {
+    color: #ffcc00;         /* Например, красный цвет при наведении */
+}
