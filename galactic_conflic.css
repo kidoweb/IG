@@ -1,7 +1,7 @@
 body {
     margin: 0;
     line-height: normal;
-    
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 :root {
@@ -49,8 +49,8 @@ body {
     -webkit-text-fill-color: transparent;
     display: inline-block;
     width: 585px;
-    
-    
+    height: 100vh; /* Use viewport height for full-screen */
+    touch-action: pan-y; /* Allow vertical scrolling */
 }
 
 .div1, .div2, .div3 {
@@ -227,149 +227,7 @@ body {
 
 
 
-/* Адаптация для мобильных устройств */
-@media (max-width: 768px) {
 
-    /* Контейнер для всей страницы */
-    .galactic-conflict {
-        height: auto; /* Высота контейнера адаптируется к содержимому */
-        padding: 20px; /* Отступы внутри контейнера */
-        font-size: 40px; /* Уменьшаем размер шрифта */
-    }
-
-    /* Элементы .div с различными классами */
-    .div {
-        top: 80px; /* Уменьшаем отступ сверху */
-        left: 0;
-        width: 100%;
-        height: auto;
-        filter: blur(150px); /* Уменьшаем размытость */
-        opacity: 0.5;
-        transform: none;
-    }
-
-    .div1, .div2, .div3 {
-        font-size: 14px; /* Уменьшаем размер шрифта */
-        letter-spacing: 0.05em; /* Уменьшаем межбуквенный интервал */
-        width: 100%;
-        top: auto;
-        left: auto;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    /* Адаптация для галактического текста */
-    .galactic-conflict1 {
-        font-size: 36px; /* Уменьшаем размер шрифта */
-        line-height: 60px;
-        width: 100%;
-        text-align: center;
-        top: 50px;
-    }
-
-    /* Адаптация для элементов с классами .div4, .div5, .div6, .div7 */
-    .div4, .div5, .div6, .div7 {
-        font-size: 14px; /* Уменьшаем размер шрифта */
-        width: 100%;
-        text-align: center;
-    }
-
-    .div4, .div6 {
-        position: static; /* Убираем абсолютное позиционирование */
-    }
-
-    .div5 {
-        top: auto;
-        bottom: 10px;
-    }
-
-    .div8 {
-        font-size: 20px; /* Уменьшаем размер шрифта */
-        width: 100%;
-        text-align: center;
-        top: auto;
-        margin-top: 20px;
-    }
-
-    .div9, .div10, .div11, .div12 {
-        font-size: 18px; /* Уменьшаем размер шрифта */
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    /* Адаптация для изображений */
-    .image-1-1, .image-1-2 {
-        width: 100%; /* Ширина изображений */
-        height: auto; /* Высота автоматически пропорциональна ширине */
-        object-fit: cover;
-        position: relative;
-    }
-
-    .image-1-1-parent {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-    }
-
-    /* Убираем или уменьшаем размеры фона */
-    .child {
-        width: 100%;
-        height: auto;
-        top: auto;
-        bottom: 10px;
-        transform: none;
-    }
-
-    /* Анимация при наведении */
-    .div1:hover, .div2:hover, .div3:hover, .child:hover {
-        transform: scale(1); /* Убираем масштабирование на мобильных устройствах */
-    }
-}
-
-/* Для еще меньших экранов (например, для телефонов с шириной экрана менее 480px) */
-@media (max-width: 480px) {
-
-    /* Уменьшаем шрифт еще больше */
-    .galactic-conflict {
-        font-size: 30px;
-        padding: 10px;
-    }
-
-    .galactic-conflict1 {
-        font-size: 30px; /* Еще больше уменьшаем размер шрифта */
-        line-height: 50px;
-    }
-
-    .div1, .div2, .div3, .div5, .div8, .div9, .div10, .div11, .div12 {
-        font-size: 14px; /* Уменьшаем шрифт */
-    }
-
-    .image-1-1, .image-1-2 {
-        width: 100%;
-        height: 200px; /* Уменьшаем размеры изображений */
-    }
-
-    .div4, .div6 {
-        width: 100%; /* Увеличиваем ширину для мобильных */
-        font-size: 12px;
-    }
-
-    /* Уменьшаем размеры контейнеров */
-    .div5, .div7 {
-        width: 100%;
-        text-align: center;
-        font-size: 14px;
-    }
-    
-    .child {
-        width: 100%;
-        height: 150px;
-        top: auto;
-        bottom: 10px;
-    }
-}
 .image-1-1, .image-1-2 {
     position: absolute;
     top: 3px;
@@ -384,5 +242,31 @@ body {
 @keyframes fadeIn {
     to {
         opacity: 0.5; /* End with opacity 1 */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .galactic-conflict1 {
+        font-size: var(--font-size-5xl);
+        width: auto;
+    }
+
+    .div1, .div2, .div3 {
+        font-size: var(--font-size-base);
+    }
+
+    .div8, .div9, .div10, .div11, .div12 {
+        font-size: var(--font-size-xl);
+    }
+
+    .image-1-1-parent {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-1-1, .image-1-2 {
+        width: 100%;
+        height: auto;
     }
 }
