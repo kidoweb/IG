@@ -227,13 +227,182 @@ a {
 a:hover {
     color: #ffcc00;         /* Например, красный цвет при наведении */
 }
+/* Mobile-first approach */
 
-
-
-
-
-
-
-
-
-
+@media (min-width: 768px) {
+    .div {
+      height: 1117px;
+      padding: 20px;
+    }
+  
+    .logo {
+      width: 30%;
+      height: auto;
+      top: 5%;
+      left: 35%;
+      font-size: 18px;
+    }
+  
+    .gateway, .interstellar {
+      font-size: 40px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .gateway {
+      top: 10%;
+    }
+  
+    .interstellar {
+      top: 20%;
+    }
+  
+    .image-galaktic-conflict, .image-half-lfe, .image-project-anomaly {
+      width: 100%;
+      height: auto;
+      top: 20px;
+      left: 0;
+      border-radius: 10px;
+    }
+  
+    .div1, .div2 {
+      width: 100%;
+      height: auto;
+      filter: blur(150px);
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      border-radius: 0;
+      transform: none;
+    }
+  
+    .galactic-conflict, .half-life, .project-anomaly {
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .galactic-conflict {
+      top: auto;
+      bottom: 10px;
+    }
+  
+    .half-life {
+      top: auto;
+      bottom: 10px;
+    }
+  
+    .project-anomaly {
+      top: auto;
+      bottom: 10px;
+    }
+  
+    .icon, .icon1 {
+      width: 100%;
+      height: auto;
+      position: static;
+      top: auto;
+      left: auto;
+      transform: none;
+    }
+  
+    .div3, .div4 {
+      font-size: 14px;
+      width: auto;
+      height: auto;
+    }
+  
+    .gateway:hover, .interstellar:hover {
+      color: #ffcc00;
+      transition: color 0.3s ease;
+    }
+  
+    .image-half-lfe:hover, .image-project-anomaly:hover, .image-galaktic-conflict:hover {
+      transform: scale(1);
+      transition: transform 0.3s ease;
+    }
+  
+    .galactic-conflict:hover, .half-life:hover, .project-anomaly:hover,
+    .div1:hover, .div2:hover {
+      filter: blur(100px);
+      opacity: 0.6;
+      transition: all 0.3s ease;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* Tablet layout styles */
+    .gateway, .interstellar {
+      font-size: 30px;
+    }
+  
+    .image-galaktic-conflict, .image-half-lfe, .image-project-anomaly {
+      width: 400px;
+      height: auto;
+      top: 20px;
+      left: 50%;
+      margin-left: -200px;
+    }
+  
+    .div1, .div2 {
+      filter: blur(200px);
+      opacity: 0.7;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    /* Desktop layout styles */
+    .gateway, .interstellar {
+      font-size: var(--font-size-77xl);
+      background: linear-gradient(91deg, #000 -39.69%, #FFF 66.22%, #1A1A1A 130.35%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      width: 640px;
+      height: 103px;
+    }
+  
+    .image-galaktic-conflict, .image-half-lfe, .image-project-anomaly {
+      width: 400px;
+      height: auto;
+      top: 20px;
+      left: 50%;
+      margin-left: -200px;
+    }
+  
+    .div1, .div2 {
+      filter: blur(250px);
+      opacity: 0.8;
+    }
+  }
+  
+  /* Feature queries */
+  
+  @media (hover: hover) {
+    /* Styles for devices with hover capability */
+    .gateway:hover, .interstellar:hover {
+      color: #ffcc00;
+      transition: all 0.3s ease;
+    }
+  
+    .image-half-lfe:hover, .image-project-anomaly:hover, .image-galaktic-conflict:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease;
+    }
+  }
+  
+  @media (pointer: coarse) {
+    /* Styles for devices with coarse pointers (touchscreens) */
+    .gateway, .interstellar {
+      font-size: 24px;
+    }
+  
+    .image-galaktic-conflict, .image-half-lfe, .image-project-anomaly {
+      width: 100%;
+      height: auto;
+      top: 20px;
+      left: 0;
+    }
+  }
